@@ -11,7 +11,7 @@ This repository contains various open source libraries precompiled as static lib
 * liblept (with PNG & JPEG support)
 * libpng
 * libprotobuf
-* libsqlite3
+* libsqlite3 (with default threading mode set to multi-threaded i.e. SQLITE_THREADSAFE=2)
 * libtesseract
 * libwebp
 
