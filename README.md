@@ -1,7 +1,18 @@
 Overview
 ========
 
-This repository contains various precompiled third-party libraries ready-to-use for OS X & iOS. The build scripts are also provided.
+This repository contains various third-party libraries precompiled as static libraries and ready-to-use for OS X & iOS. The build scripts are also provided.
+
+* libexif
+* libexiv2
+* libexpat
+* libjpeg-turbo
+* liblcms2
+* liblept
+* libpng
+* libprotobuf
+* libsqlite3
+* libwebp
 
 Building
 ========
