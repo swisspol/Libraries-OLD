@@ -7,9 +7,8 @@
 #include <lcms2.h>
 #include <google/protobuf/io/zero_copy_stream_impl_lite.h>
 #include <libexif/exif-data.h>
-#if !defined(ANDROID) && !defined(__ANDROID__)
 #include <exiv2/exiv2.hpp>
-#endif
+#include <leptonica/allheaders.h>
 
 #include "libraries.h"
 
@@ -46,9 +45,11 @@ void test_libraries() {
   ExifData* exif = exif_data_new();
   exif_data_unref(exif);
   
-#if !defined(ANDROID) && !defined(__ANDROID__)
   // Test libexiv2
   Exiv2::ExifData* data = new Exiv2::ExifData();
   delete data;
-#endif
+  
+  // Test Leptonica
+  PIX* pix = pixCreate(1, 1, 8);
+  pixDestroy(&pix);
 }

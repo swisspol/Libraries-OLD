@@ -160,6 +160,7 @@
 					"-llcms2",
 					"-lprotobuf-lite",
 					"-lexif",
+					"-llept",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -183,6 +184,7 @@
 					"-llcms2",
 					"-lprotobuf-lite",
 					"-lexif",
+					"-llept",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -208,6 +210,7 @@
 				E247DF911819E719002CD010 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

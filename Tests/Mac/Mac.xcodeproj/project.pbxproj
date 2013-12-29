@@ -12,7 +12,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E247DF441819DF8D002CD010 /* TEST */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = TEST; path = Mac; sourceTree = BUILT_PRODUCTS_DIR; };
+		E247DF441819DF8D002CD010 /* Mac */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Mac; sourceTree = BUILT_PRODUCTS_DIR; };
 		E247DF471819DF8D002CD010 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		E247DF541819E5B4002CD010 /* libraries.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = libraries.cc; path = ../libraries.cc; sourceTree = "<group>"; };
 		E247DF561819E5E7002CD010 /* libraries.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libraries.h; path = ../libraries.h; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		E247DF451819DF8D002CD010 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E247DF441819DF8D002CD010 /* TEST */,
+				E247DF441819DF8D002CD010 /* Mac */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,7 +71,7 @@
 			);
 			name = Mac;
 			productName = TEST;
-			productReference = E247DF441819DF8D002CD010 /* TEST */;
+			productReference = E247DF441819DF8D002CD010 /* Mac */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -151,6 +151,7 @@
 					"-llcms2",
 					"-lprotobuf-lite",
 					"-lexif",
+					"-llept",
 				);
 				PRODUCT_NAME = Mac;
 			};
@@ -172,6 +173,7 @@
 					"-llcms2",
 					"-lprotobuf-lite",
 					"-lexif",
+					"-llept",
 				);
 				PRODUCT_NAME = Mac;
 			};

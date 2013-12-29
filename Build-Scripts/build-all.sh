@@ -53,6 +53,11 @@ export IPHONE_MIN_VERSION="5.0"
   export DESTINATION="../Libraries-Mac/libexiv2"
   ./build-libexiv2.sh
 )
+(
+  export PLATFORMS="MacOSX-X86_64 MacOSX-I386"
+  export DESTINATION="../Libraries-Mac/liblept"
+  ./build-liblept.sh
+)
 
 # Build iOS libraries
 (    
@@ -99,4 +104,9 @@ export IPHONE_MIN_VERSION="5.0"
   export PLATFORMS="iPhone-Simulator iPhoneOS-V7 iPhoneOS-V7s"
   export DESTINATION="../Libraries-iOS/libexiv2"
   ./build-libexiv2.sh
+)
+(
+  export PLATFORMS="iPhone-Simulator iPhoneOS-V7 iPhoneOS-V7s"
+  export DESTINATION="../Libraries-iOS/liblept"
+  ./build-liblept.sh
 )
