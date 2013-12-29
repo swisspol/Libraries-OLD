@@ -9,6 +9,7 @@
 #include <libexif/exif-data.h>
 #include <exiv2/exiv2.hpp>
 #include <leptonica/allheaders.h>
+#include <tesseract/baseapi.h>
 
 #include "libraries.h"
 
@@ -49,7 +50,10 @@ void test_libraries() {
   Exiv2::ExifData* data = new Exiv2::ExifData();
   delete data;
   
-  // Test Leptonica
+  // Test liblept
   PIX* pix = pixCreate(1, 1, 8);
   pixDestroy(&pix);
+  
+  // Test libtesseract
+  tesseract::TessBaseAPI::Version();
 }

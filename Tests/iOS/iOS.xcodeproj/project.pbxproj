@@ -161,6 +161,7 @@
 					"-lprotobuf-lite",
 					"-lexif",
 					"-llept",
+					"-ltesseract",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -185,6 +186,7 @@
 					"-lprotobuf-lite",
 					"-lexif",
 					"-llept",
+					"-ltesseract",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

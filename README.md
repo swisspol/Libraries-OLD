@@ -12,6 +12,7 @@ This repository contains various open source libraries precompiled as static lib
 * libpng
 * libprotobuf
 * libsqlite3
+* libtesseract
 * libwebp
 
 Building
