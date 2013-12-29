@@ -8,7 +8,7 @@ This repository contains various open source libraries precompiled as static lib
 * libexpat
 * libjpeg-turbo
 * liblcms2
-* liblept
+* liblept (with PNG & JPEG support)
 * libpng
 * libprotobuf
 * libsqlite3

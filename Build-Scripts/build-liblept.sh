@@ -51,6 +51,10 @@ do
   rm -rf "${ROOTDIR}"
   mkdir -p "${ROOTDIR}"
   
+  BASE=`pwd`
+  LIBPNG="${BASE}/${DESTINATION}/../libpng"
+  LIBJPEG="${BASE}/${DESTINATION}/../libjpeg-turbo"
+  
   (
     if [ "${PLATFORM}" == "iPhoneOS" ]
     then
@@ -65,9 +69,9 @@ do
       export SDKROOT="${DEVROOT}/SDKs/${PLATFORM}${MAC_SDK}.sdk"
     fi
     export CC=`xcrun -find gcc`
-    export CFLAGS="-arch ${ARCH} -isysroot ${SDKROOT} -I${SDKROOT}/usr/include"
+    export CFLAGS="-arch ${ARCH} -isysroot ${SDKROOT} -I${SDKROOT}/usr/include -I${LIBPNG}/include -I${LIBJPEG}/include"
     export LD=`xcrun -find ld`
-    export LDFLAGS="-arch ${ARCH} -isysroot ${SDKROOT} -L${SDKROOT}/usr/lib"
+    export LDFLAGS="-arch ${ARCH} -isysroot ${SDKROOT} -L${SDKROOT}/usr/lib -lz -L${LIBPNG}/lib -L${LIBJPEG}/lib"
     export CPPFLAGS="${CFLAGS}"
     if [ "${PLATFORM}" == "MacOSX" ]
     then
