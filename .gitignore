@@ -5,3 +5,6 @@ project.xcworkspace
 *.gz
 *.bz2
 *.zip
+
+Tests/Android/libs
+Tests/Android/obj

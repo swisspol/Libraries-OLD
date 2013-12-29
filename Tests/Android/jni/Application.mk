@@ -1,0 +1,1 @@
+../../../Libraries-Android/jni/Application.mk

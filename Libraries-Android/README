@@ -1,0 +1,6 @@
+To (re)build all libraries for Android NDK (armv7a), simply run the following commands in Terminal while in this directory:
+
+$ export NDK_BUILD=(path to ndk-build tool in Android NDK)
+$ ./build-all.sh
+
+This was tested on OS X 10.9 with Android NDK r9 (x86_64) and Xcode 5 toolchain but it should also work on Linux / CentOS.
