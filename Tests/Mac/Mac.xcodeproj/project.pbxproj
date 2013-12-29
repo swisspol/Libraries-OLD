@@ -1,0 +1,204 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E247DF481819DF8D002CD010 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E247DF471819DF8D002CD010 /* main.c */; };
+		E247DF551819E5B4002CD010 /* libraries.cc in Sources */ = {isa = PBXBuildFile; fileRef = E247DF541819E5B4002CD010 /* libraries.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E247DF441819DF8D002CD010 /* TEST */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = TEST; path = Mac; sourceTree = BUILT_PRODUCTS_DIR; };
+		E247DF471819DF8D002CD010 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		E247DF541819E5B4002CD010 /* libraries.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = libraries.cc; path = ../libraries.cc; sourceTree = "<group>"; };
+		E247DF561819E5E7002CD010 /* libraries.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libraries.h; path = ../libraries.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E247DF411819DF8D002CD010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E247DF3B1819DF8D002CD010 = {
+			isa = PBXGroup;
+			children = (
+				E247DF531819E4E3002CD010 /* Source */,
+				E247DF451819DF8D002CD010 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E247DF451819DF8D002CD010 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E247DF441819DF8D002CD010 /* TEST */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E247DF531819E4E3002CD010 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E247DF561819E5E7002CD010 /* libraries.h */,
+				E247DF541819E5B4002CD010 /* libraries.cc */,
+				E247DF471819DF8D002CD010 /* main.c */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E247DF431819DF8D002CD010 /* Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E247DF4D1819DF8D002CD010 /* Build configuration list for PBXNativeTarget "Mac" */;
+			buildPhases = (
+				E247DF401819DF8D002CD010 /* Sources */,
+				E247DF411819DF8D002CD010 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mac;
+			productName = TEST;
+			productReference = E247DF441819DF8D002CD010 /* TEST */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E247DF3C1819DF8D002CD010 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "33cube, Inc.";
+			};
+			buildConfigurationList = E247DF3F1819DF8D002CD010 /* Build configuration list for PBXProject "Mac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E247DF3B1819DF8D002CD010;
+			productRefGroup = E247DF451819DF8D002CD010 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E247DF431819DF8D002CD010 /* Mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E247DF401819DF8D002CD010 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E247DF481819DF8D002CD010 /* main.c in Sources */,
+				E247DF551819E5B4002CD010 /* libraries.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E247DF4B1819DF8D002CD010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Debug;
+		};
+		E247DF4C1819DF8D002CD010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Release;
+		};
+		E247DF4E1819DF8D002CD010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
+				HEADER_SEARCH_PATHS = "../../Libraries-Mac/**";
+				LIBRARY_SEARCH_PATHS = "../../Libraries-Mac/**";
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-Wl,-search_paths_first",
+					"-lsqlite3",
+					"-ljpeg",
+					"-lwebp",
+					"-lpng",
+					"-llcms2",
+					"-lprotobuf-lite",
+					"-lexif",
+				);
+				PRODUCT_NAME = Mac;
+			};
+			name = Debug;
+		};
+		E247DF4F1819DF8D002CD010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
+				HEADER_SEARCH_PATHS = "../../Libraries-Mac/**";
+				LIBRARY_SEARCH_PATHS = "../../Libraries-Mac/**";
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-Wl,-search_paths_first",
+					"-lsqlite3",
+					"-ljpeg",
+					"-lwebp",
+					"-lpng",
+					"-llcms2",
+					"-lprotobuf-lite",
+					"-lexif",
+				);
+				PRODUCT_NAME = Mac;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E247DF3F1819DF8D002CD010 /* Build configuration list for PBXProject "Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E247DF4B1819DF8D002CD010 /* Debug */,
+				E247DF4C1819DF8D002CD010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E247DF4D1819DF8D002CD010 /* Build configuration list for PBXNativeTarget "Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E247DF4E1819DF8D002CD010 /* Debug */,
+				E247DF4F1819DF8D002CD010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E247DF3C1819DF8D002CD010 /* Project object */;
+}

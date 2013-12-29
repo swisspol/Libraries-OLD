@@ -1,0 +1,215 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E247DF981819E7F9002CD010 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E247DF961819E7F9002CD010 /* main.m */; };
+		E247DF9C1819E818002CD010 /* libraries.cc in Sources */ = {isa = PBXBuildFile; fileRef = E247DF9B1819E818002CD010 /* libraries.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E247DF631819E719002CD010 /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E247DF951819E7F9002CD010 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E247DF961819E7F9002CD010 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E247DF9A1819E818002CD010 /* libraries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libraries.h; path = ../libraries.h; sourceTree = "<group>"; };
+		E247DF9B1819E818002CD010 /* libraries.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = libraries.cc; path = ../libraries.cc; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E247DF601819E719002CD010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E247DF5A1819E719002CD010 = {
+			isa = PBXGroup;
+			children = (
+				E247DF991819E811002CD010 /* Source */,
+				E247DF641819E719002CD010 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E247DF641819E719002CD010 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E247DF631819E719002CD010 /* iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E247DF991819E811002CD010 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E247DF951819E7F9002CD010 /* Info.plist */,
+				E247DF9A1819E818002CD010 /* libraries.h */,
+				E247DF9B1819E818002CD010 /* libraries.cc */,
+				E247DF961819E7F9002CD010 /* main.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E247DF621819E719002CD010 /* iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E247DF8F1819E719002CD010 /* Build configuration list for PBXNativeTarget "iOS" */;
+			buildPhases = (
+				E247DF5F1819E719002CD010 /* Sources */,
+				E247DF601819E719002CD010 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOS;
+			productName = iOS;
+			productReference = E247DF631819E719002CD010 /* iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E247DF5B1819E719002CD010 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "33cube, Inc.";
+			};
+			buildConfigurationList = E247DF5E1819E719002CD010 /* Build configuration list for PBXProject "iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E247DF5A1819E719002CD010;
+			productRefGroup = E247DF641819E719002CD010 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E247DF621819E719002CD010 /* iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E247DF5F1819E719002CD010 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E247DF981819E7F9002CD010 /* main.m in Sources */,
+				E247DF9C1819E818002CD010 /* libraries.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E247DF8D1819E719002CD010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Debug;
+		};
+		E247DF8E1819E719002CD010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Release;
+		};
+		E247DF901819E719002CD010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
+				HEADER_SEARCH_PATHS = "../../Libraries-iOS/**";
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = "../../Libraries-iOS/**";
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-Wl,-search_paths_first",
+					"-lsqlite3",
+					"-ljpeg",
+					"-lwebp",
+					"-lpng",
+					"-llcms2",
+					"-lprotobuf-lite",
+					"-lexif",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E247DF911819E719002CD010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
+				HEADER_SEARCH_PATHS = "../../Libraries-iOS/**";
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = "../../Libraries-iOS/**";
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-Wl,-search_paths_first",
+					"-lsqlite3",
+					"-ljpeg",
+					"-lwebp",
+					"-lpng",
+					"-llcms2",
+					"-lprotobuf-lite",
+					"-lexif",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E247DF5E1819E719002CD010 /* Build configuration list for PBXProject "iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E247DF8D1819E719002CD010 /* Debug */,
+				E247DF8E1819E719002CD010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E247DF8F1819E719002CD010 /* Build configuration list for PBXNativeTarget "iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E247DF901819E719002CD010 /* Debug */,
+				E247DF911819E719002CD010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E247DF5B1819E719002CD010 /* Project object */;
+}
