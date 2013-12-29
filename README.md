@@ -1,7 +1,7 @@
 Overview
 ========
 
-This repository contains various open source libraries precompiled as static libraries and ready-to-use for OS X & iOS. The build scripts are also provided.
+This repository contains various open source libraries precompiled as static libraries and ready-to-use for OS X (i386, x86_64) & iOS (armv7, armv7s). The build scripts are also provided.
 
 * libexif
 * libexiv2
