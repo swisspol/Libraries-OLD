@@ -65,7 +65,7 @@ export IPHONE_MIN_VERSION="5.0"
 )
 
 # Build iOS libraries
-(    
+(
   export PLATFORMS="iPhone-Simulator iPhoneOS-V7 iPhoneOS-V7s"
   export DESTINATION="../Libraries-iOS/libsqlite3"
   ./build-libsqlite3.sh
