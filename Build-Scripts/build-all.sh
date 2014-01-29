@@ -18,11 +18,11 @@ export IPHONE_MIN_VERSION="5.0"
   export DESTINATION="../Libraries-Mac/libexif"
   ./build-libexif.sh
 )
-# (
-#   export PLATFORMS="MacOSX-X86_64 MacOSX-I386"
-#   export DESTINATION="../Libraries-Mac/libjpeg-turbo"
-#   ./build-libjpeg-turbo.sh
-# )
+(
+  export PLATFORMS="MacOSX-X86_64 MacOSX-I386"
+  export DESTINATION="../Libraries-Mac/libjpeg-turbo"
+  ./build-libjpeg-turbo.sh
+)
 (
   export PLATFORMS="MacOSX-X86_64 MacOSX-I386"
   export DESTINATION="../Libraries-Mac/liblcms2"
@@ -75,11 +75,11 @@ export IPHONE_MIN_VERSION="5.0"
   export DESTINATION="../Libraries-iOS/libexif"
   ./build-libexif.sh
 )
-# (
-#   export PLATFORMS="iPhone-Simulator iPhoneOS-V7 iPhoneOS-V7s"
-#   export DESTINATION="../Libraries-iOS/libjpeg-turbo"
-#   ./build-libjpeg-turbo.sh
-# )
+(
+  export PLATFORMS="iPhone-Simulator iPhoneOS-V7 iPhoneOS-V7s"
+  export DESTINATION="../Libraries-iOS/libjpeg-turbo"
+  ./build-libjpeg-turbo.sh
+)
 (
   export PLATFORMS="iPhone-Simulator iPhoneOS-V7 iPhoneOS-V7s"
   export DESTINATION="../Libraries-iOS/liblcms2"

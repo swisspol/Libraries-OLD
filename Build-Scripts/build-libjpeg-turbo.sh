@@ -15,6 +15,12 @@ rm -rf "nasm-${NASM_VERSION}"
 unzip "nasm-${NASM_VERSION}-macosx.zip"
 NASM_PATH="`pwd`/nasm-${NASM_VERSION}/nasm"
 
+# Download special gas preprocessor version compatible with Xcode 5 and append to $PATH
+rm -f "gas-preprocessor.pl"
+curl -O "http://sourceforge.net/p/libjpeg-turbo/code/HEAD/tree/gas-preprocessor/gas-preprocessor.pl"
+chmod a+x "gas-preprocessor.pl"
+export PATH="$PATH:`pwd`"
+
 # Download source
 if [ ! -f "libjpeg-turbo-${VERSION}.tar.gz" ]
 then
@@ -24,18 +30,6 @@ fi
 # Extract source
 rm -rf "libjpeg-turbo-${VERSION}"
 tar -xvf "libjpeg-turbo-${VERSION}.tar.gz"
-
-# Download gas preprocessor and add to $PATH
-if [ ! -f "gas-preprocessor-master.zip" ]
-then
-  curl -o "gas-preprocessor-master.zip" "https://codeload.github.com/yuvi/gas-preprocessor/zip/master"
-fi
-rm -rf "gas-preprocessor-master"
-unzip "gas-preprocessor-master.zip"
-pushd "gas-preprocessor-master"
-chmod a+x "gas-preprocessor.pl"
-export PATH=$PATH:`pwd`
-popd
 
 # Build
 rm -rf "${DESTINATION}"
@@ -80,11 +74,11 @@ do
     
     if [ "${PLATFORM}" == "iPhoneOS" ]
     then
-    export DEVROOT="${DEVELOPER}/Platforms/${PLATFORM}.platform/Developer"
+      export DEVROOT="${DEVELOPER}/Platforms/${PLATFORM}.platform/Developer"
       export SDKROOT="${DEVROOT}/SDKs/${PLATFORM}${IPHONE_SDK}.sdk"
       export CC=`xcrun -find gcc`
       export LD=`xcrun -find ld`
-      export IOS_CFLAGS="-arch ${ARCH}"
+      export IOS_CFLAGS="-no-integrated-as -arch ${ARCH}"
       export CFLAGS="-O3 ${IOS_CFLAGS} -isysroot ${SDKROOT}"
       export LDFLAGS="${IOS_CFLAGS} -isysroot ${SDKROOT}"
       export CPPFLAGS="${CFLAGS}"
@@ -132,17 +126,19 @@ do
   then
     libtool -static "${DESTINATION}/lib/libjpeg.a" "${ROOTDIR}/lib/libjpeg.a" -o "${DESTINATION}/lib/lib.a"
     mv "${DESTINATION}/lib/lib.a" "${DESTINATION}/lib/libjpeg.a"
+    libtool -static "${DESTINATION}/lib/libturbojpeg.a" "${ROOTDIR}/lib/libturbojpeg.a" -o "${DESTINATION}/lib/lib.a"
+    mv "${DESTINATION}/lib/lib.a" "${DESTINATION}/lib/libturbojpeg.a"
   else
     ditto "${ROOTDIR}/include" "${DESTINATION}/include"
     libtool -static "${ROOTDIR}/lib/libjpeg.a" -o "${DESTINATION}/lib/libjpeg.a"
+    libtool -static "${ROOTDIR}/lib/libturbojpeg.a" -o "${DESTINATION}/lib/libturbojpeg.a"
   fi
   
   rm -rf "${ROOTDIR}"
 done
 
 # Clean up
-rm -rf "gas-preprocessor-master"
-# rm -f "gas-preprocessor-master.zip"
+rm -f "gas-preprocessor.pl"
 rm -rf "libjpeg-turbo-${VERSION}"
 # rm -f "libjpeg-turbo-${VERSION}.tar.gz"
 rm -rf "nasm-${NASM_VERSION}"
