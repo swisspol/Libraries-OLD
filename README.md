@@ -6,7 +6,7 @@ This repository contains various open source libraries precompiled as static lib
 * libexif
 * libexiv2
 * libexpat
-* libjpeg-turbo
+* libjpeg-turbo (*)
 * liblcms2
 * liblept (with PNG & JPEG support)
 * libpng
@@ -14,6 +14,8 @@ This repository contains various open source libraries precompiled as static lib
 * libsqlite3 (with default threading mode set to multi-threaded i.e. SQLITE_THREADSAFE=2)
 * libtesseract
 * libwebp
+
+(*) See [this message](http://sourceforge.net/mailarchive/message.php?msg_id=31902239) from the libjpeg-turbo-users mailing list for important information about performance regression when using Clang instead of GCC to compile the library.
 
 Building
 ========
