@@ -22,8 +22,6 @@ To (re)build all libraries for both OS X, iPhone Simulator and iPhone OS, simply
 
 The build scripts were tested on OS X 10.9 with Xcode 5.0.1.
 
-**IMPORTANT:** Note that libjpeg-turbo [does not currently build with NEON support](https://github.com/swisspol/Libraries/issues/1) for iPhone OS due to the change from LLVM-GCC-4.2 to Clang in Xcode 5. The libjpeg-turbo libraries for OS X and iOS are therefore the pre-built ones from http://sourceforge.net/projects/libjpeg-turbo/files/.
-
 Using
 =====
 
