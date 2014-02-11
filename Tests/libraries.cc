@@ -11,6 +11,15 @@
 #include <leptonica/allheaders.h>
 #include <tesseract/baseapi.h>
 #include <lame/lame.h>
+extern "C" {
+#include <libavcodec/avcodec.h>
+#include <libavdevice/avdevice.h>
+#include <libavfilter/avfilter.h>
+#include <libavformat/avformat.h>
+#include <libavutil/avutil.h>
+#include <libswresample/swresample.h>
+#include <libswscale/swscale.h>
+}
 
 #include "libraries.h"
 
@@ -61,4 +70,25 @@ void test_libraries() {
   // Test libmp3lame
   lame_global_flags* flags = lame_init();
   lame_close(flags);
+  
+  // Test ffmpeg / libavcodec
+  avcodec_version();
+  
+  // Test ffmpeg / libavdevice
+  avdevice_version();
+  
+  // Test ffmpeg / libavfilter
+  avfilter_version();
+  
+  // Test ffmpeg / libavformat
+  avformat_version();
+  
+  // Test ffmpeg / libavutil
+  avutil_version();
+  
+  // Test ffmpeg / libswresample
+  swresample_version();
+  
+  // Test ffmpeg / libswscale
+  swscale_version();
 }

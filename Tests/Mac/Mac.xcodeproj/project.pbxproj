@@ -141,7 +141,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEAD_CODE_STRIPPING = YES;
-				HEADER_SEARCH_PATHS = "../../Libraries-Mac/**";
+				HEADER_SEARCH_PATHS = (
+					"../../Libraries-Mac/libexif/include",
+					"../../Libraries-Mac/libexiv2/include",
+					"../../Libraries-Mac/libexpat/include",
+					"../../Libraries-Mac/libffmpeg/include",
+					"../../Libraries-Mac/libjpeg-turbo/include",
+					"../../Libraries-Mac/liblcms2/include",
+					"../../Libraries-Mac/liblept/include",
+					"../../Libraries-Mac/libmp3lame/include",
+					"../../Libraries-Mac/libpng/include",
+					"../../Libraries-Mac/libprotobuf/include",
+					"../../Libraries-Mac/libsqlite3/include",
+					"../../Libraries-Mac/libtesseract/include",
+					"../../Libraries-Mac/libwebp/include",
+				);
 				LIBRARY_SEARCH_PATHS = "../../Libraries-Mac/**";
 				OTHER_LDFLAGS = (
 					"-lz",
@@ -156,6 +170,13 @@
 					"-llept",
 					"-ltesseract",
 					"-lmp3lame",
+					"-lavcodec",
+					"-lavdevice",
+					"-lavfilter",
+					"-lavformat",
+					"-lavutil",
+					"-lswresample",
+					"-lswscale",
 				);
 				PRODUCT_NAME = Mac;
 			};
@@ -165,7 +186,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEAD_CODE_STRIPPING = YES;
-				HEADER_SEARCH_PATHS = "../../Libraries-Mac/**";
+				HEADER_SEARCH_PATHS = (
+					"../../Libraries-Mac/libexif/include",
+					"../../Libraries-Mac/libexiv2/include",
+					"../../Libraries-Mac/libexpat/include",
+					"../../Libraries-Mac/libffmpeg/include",
+					"../../Libraries-Mac/libjpeg-turbo/include",
+					"../../Libraries-Mac/liblcms2/include",
+					"../../Libraries-Mac/liblept/include",
+					"../../Libraries-Mac/libmp3lame/include",
+					"../../Libraries-Mac/libpng/include",
+					"../../Libraries-Mac/libprotobuf/include",
+					"../../Libraries-Mac/libsqlite3/include",
+					"../../Libraries-Mac/libtesseract/include",
+					"../../Libraries-Mac/libwebp/include",
+				);
 				LIBRARY_SEARCH_PATHS = "../../Libraries-Mac/**";
 				OTHER_LDFLAGS = (
 					"-lz",
@@ -180,6 +215,13 @@
 					"-llept",
 					"-ltesseract",
 					"-lmp3lame",
+					"-lavcodec",
+					"-lavdevice",
+					"-lavfilter",
+					"-lavformat",
+					"-lavutil",
+					"-lswresample",
+					"-lswscale",
 				);
 				PRODUCT_NAME = Mac;
 			};

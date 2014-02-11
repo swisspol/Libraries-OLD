@@ -68,6 +68,11 @@ export IPHONE_MIN_VERSION="5.0"
   export DESTINATION="../Libraries-Mac/libmp3lame"
   ./build-libmp3lame.sh
 )
+(
+  export PLATFORMS="MacOSX-X86_64 MacOSX-I386"
+  export DESTINATION="../Libraries-Mac/libffmpeg"
+  ./build-libffmpeg.sh
+)
 
 # Build iOS libraries
 (
@@ -129,4 +134,9 @@ export IPHONE_MIN_VERSION="5.0"
   export PLATFORMS="iPhone-Simulator iPhoneOS-V7 iPhoneOS-V7s"
   export DESTINATION="../Libraries-iOS/libmp3lame"
   ./build-libmp3lame.sh
+)
+(
+  export PLATFORMS="iPhone-Simulator iPhoneOS-V7 iPhoneOS-V7s"
+  export DESTINATION="../Libraries-iOS/libffmpeg"
+  ./build-libffmpeg.sh
 )

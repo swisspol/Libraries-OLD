@@ -147,7 +147,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEAD_CODE_STRIPPING = YES;
-				HEADER_SEARCH_PATHS = "../../Libraries-iOS/**";
+				HEADER_SEARCH_PATHS = (
+					"../../Libraries-iOS/libexif/include",
+					"../../Libraries-iOS/libexiv2/include",
+					"../../Libraries-iOS/libexpat/include",
+					"../../Libraries-iOS/libffmpeg/include",
+					"../../Libraries-iOS/libjpeg-turbo/include",
+					"../../Libraries-iOS/liblcms2/include",
+					"../../Libraries-iOS/liblept/include",
+					"../../Libraries-iOS/libmp3lame/include",
+					"../../Libraries-iOS/libpng/include",
+					"../../Libraries-iOS/libprotobuf/include",
+					"../../Libraries-iOS/libsqlite3/include",
+					"../../Libraries-iOS/libtesseract/include",
+					"../../Libraries-iOS/libwebp/include",
+				);
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = "../../Libraries-iOS/**";
 				OTHER_LDFLAGS = (
@@ -163,6 +177,13 @@
 					"-llept",
 					"-ltesseract",
 					"-lmp3lame",
+					"-lavcodec",
+					"-lavdevice",
+					"-lavfilter",
+					"-lavformat",
+					"-lavutil",
+					"-lswresample",
+					"-lswscale",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -173,7 +194,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEAD_CODE_STRIPPING = YES;
-				HEADER_SEARCH_PATHS = "../../Libraries-iOS/**";
+				HEADER_SEARCH_PATHS = (
+					"../../Libraries-iOS/libexif/include",
+					"../../Libraries-iOS/libexiv2/include",
+					"../../Libraries-iOS/libexpat/include",
+					"../../Libraries-iOS/libffmpeg/include",
+					"../../Libraries-iOS/libjpeg-turbo/include",
+					"../../Libraries-iOS/liblcms2/include",
+					"../../Libraries-iOS/liblept/include",
+					"../../Libraries-iOS/libmp3lame/include",
+					"../../Libraries-iOS/libpng/include",
+					"../../Libraries-iOS/libprotobuf/include",
+					"../../Libraries-iOS/libsqlite3/include",
+					"../../Libraries-iOS/libtesseract/include",
+					"../../Libraries-iOS/libwebp/include",
+				);
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = "../../Libraries-iOS/**";
 				OTHER_LDFLAGS = (
@@ -189,6 +224,13 @@
 					"-llept",
 					"-ltesseract",
 					"-lmp3lame",
+					"-lavcodec",
+					"-lavdevice",
+					"-lavfilter",
+					"-lavformat",
+					"-lavutil",
+					"-lswresample",
+					"-lswscale",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

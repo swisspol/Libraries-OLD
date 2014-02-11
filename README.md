@@ -6,6 +6,7 @@ This repository contains various open source libraries precompiled as static lib
 * [libexif](http://libexif.sourceforge.net/)
 * [libexiv2](http://www.exiv2.org/)
 * [libexpat](http://expat.sourceforge.net/)
+* [libffmpeg](http://www.ffmpeg.org/)
 * [libjpeg-turbo](http://libjpeg-turbo.virtualgl.org/) (*)
 * [liblcms2](http://www.littlecms.com/)
 * [liblept](http://www.leptonica.com/source/README.html) (with PNG & JPEG support)
