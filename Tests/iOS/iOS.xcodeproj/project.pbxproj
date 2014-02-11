@@ -162,6 +162,7 @@
 					"-lexif",
 					"-llept",
 					"-ltesseract",
+					"-lmp3lame",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -187,6 +188,7 @@
 					"-lexif",
 					"-llept",
 					"-ltesseract",
+					"-lmp3lame",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

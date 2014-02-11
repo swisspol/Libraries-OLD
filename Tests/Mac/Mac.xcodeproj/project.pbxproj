@@ -155,6 +155,7 @@
 					"-lexif",
 					"-llept",
 					"-ltesseract",
+					"-lmp3lame",
 				);
 				PRODUCT_NAME = Mac;
 			};
@@ -178,6 +179,7 @@
 					"-lexif",
 					"-llept",
 					"-ltesseract",
+					"-lmp3lame",
 				);
 				PRODUCT_NAME = Mac;
 			};

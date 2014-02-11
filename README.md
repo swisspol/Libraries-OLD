@@ -9,6 +9,7 @@ This repository contains various open source libraries precompiled as static lib
 * libjpeg-turbo (*)
 * liblcms2
 * liblept (with PNG & JPEG support)
+* libmp3lame
 * libpng
 * libprotobuf
 * libsqlite3 (with default threading mode set to multi-threaded i.e. SQLITE_THREADSAFE=2)

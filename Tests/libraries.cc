@@ -10,6 +10,7 @@
 #include <exiv2/exiv2.hpp>
 #include <leptonica/allheaders.h>
 #include <tesseract/baseapi.h>
+#include <lame/lame.h>
 
 #include "libraries.h"
 
@@ -56,4 +57,8 @@ void test_libraries() {
   
   // Test libtesseract
   tesseract::TessBaseAPI::Version();
+  
+  // Test libmp3lame
+  lame_global_flags* flags = lame_init();
+  lame_close(flags);
 }
