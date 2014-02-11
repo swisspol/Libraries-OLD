@@ -3,18 +3,18 @@ Overview
 
 This repository contains various open source libraries precompiled as static libraries and ready-to-use for OS X (i386, x86_64) & iOS (armv7, armv7s). The build scripts are also provided.
 
-* libexif
-* libexiv2
-* libexpat
-* libjpeg-turbo (*)
-* liblcms2
-* liblept (with PNG & JPEG support)
-* libmp3lame
-* libpng
-* libprotobuf
-* libsqlite3 (with default threading mode set to multi-threaded i.e. SQLITE_THREADSAFE=2)
-* libtesseract
-* libwebp
+* [libexif](http://libexif.sourceforge.net/)
+* [libexiv2](http://www.exiv2.org/)
+* [libexpat](http://expat.sourceforge.net/)
+* [libjpeg-turbo](http://libjpeg-turbo.virtualgl.org/) (*)
+* [liblcms2](http://www.littlecms.com/)
+* [liblept](http://www.leptonica.com/source/README.html) (with PNG & JPEG support)
+* [libmp3lame](http://lame.sourceforge.net/)
+* [libpng](http://www.libpng.org/pub/png/libpng.html)
+* [libprotobuf](https://code.google.com/p/protobuf/)
+* [libsqlite3](http://www.sqlite.org/) (with default threading mode set to multi-threaded i.e. SQLITE_THREADSAFE=2)
+* [libtesseract](https://code.google.com/p/tesseract-ocr/)
+* [libwebp](https://developers.google.com/speed/webp/)
 
 (*) See [this message](http://sourceforge.net/mailarchive/message.php?msg_id=31902239) from the libjpeg-turbo-users mailing list for important information about performance regression when using Clang instead of GCC to compile the library.
 
