@@ -17,7 +17,7 @@ NASM_PATH="`pwd`/nasm-${NASM_VERSION}/nasm"
 
 # Download special gas preprocessor version compatible with Xcode 5 and append to $PATH
 rm -f "gas-preprocessor.pl"
-curl -O "http://sourceforge.net/p/libjpeg-turbo/code/HEAD/tree/gas-preprocessor/gas-preprocessor.pl"
+curl -o "gas-preprocessor.pl" "http://sourceforge.net/p/libjpeg-turbo/code/HEAD/tree/gas-preprocessor/gas-preprocessor.pl?format=raw"
 chmod a+x "gas-preprocessor.pl"
 export PATH="$PATH:`pwd`"
 
