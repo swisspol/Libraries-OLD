@@ -73,6 +73,7 @@ void test_libraries() {
   
   // Test ffmpeg / libavcodec
   avcodec_version();
+  avcodec_register_all();
   
   // Test ffmpeg / libavdevice
   avdevice_version();
@@ -82,6 +83,8 @@ void test_libraries() {
   
   // Test ffmpeg / libavformat
   avformat_version();
+  avformat_network_init();
+  av_register_all();
   
   // Test ffmpeg / libavutil
   avutil_version();

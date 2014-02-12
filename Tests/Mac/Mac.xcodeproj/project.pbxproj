@@ -159,6 +159,8 @@
 				LIBRARY_SEARCH_PATHS = "../../Libraries-Mac/**";
 				OTHER_LDFLAGS = (
 					"-lz",
+					"-lbz2",
+					"-liconv",
 					"-Wl,-search_paths_first",
 					"-lsqlite3",
 					"-ljpeg",
@@ -204,6 +206,8 @@
 				LIBRARY_SEARCH_PATHS = "../../Libraries-Mac/**";
 				OTHER_LDFLAGS = (
 					"-lz",
+					"-lbz2",
+					"-liconv",
 					"-Wl,-search_paths_first",
 					"-lsqlite3",
 					"-ljpeg",
