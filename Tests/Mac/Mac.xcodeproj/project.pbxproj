@@ -80,7 +80,7 @@
 		E247DF3C1819DF8D002CD010 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "33cube, Inc.";
 			};
 			buildConfigurationList = E247DF3F1819DF8D002CD010 /* Build configuration list for PBXProject "Mac" */;

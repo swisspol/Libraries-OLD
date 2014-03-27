@@ -4,7 +4,7 @@
 export DEVELOPER=`xcode-select --print-path`
 export MAC_SDK="10.9"
 export MAC_MIN_VERSION="10.6"
-export IPHONE_SDK="7.0"
+export IPHONE_SDK="7.1"
 export IPHONE_MIN_VERSION="5.0"
 
 # Build Mac libraries
