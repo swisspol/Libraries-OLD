@@ -1,7 +1,7 @@
 #!/bin/sh
 set -ex
 
-VERSION="0.3.1"
+VERSION="0.4.0"
 
 # Download source
 if [ ! -f "libwebp-${VERSION}.tar.gz" ]
