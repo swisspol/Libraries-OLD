@@ -27,7 +27,7 @@ export PATH="$PATH:${YASM_DIR}/bin"
 
 # Download gas preprocessor and append to $PATH
 rm -f "gas-preprocessor.pl"
-curl -O "https://raw.github.com/yuvi/gas-preprocessor/master/gas-preprocessor.pl"
+curl -L -O "https://raw.github.com/yuvi/gas-preprocessor/master/gas-preprocessor.pl"
 chmod a+x "gas-preprocessor.pl"
 export PATH="$PATH:`pwd`"
 
