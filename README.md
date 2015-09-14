@@ -1,3 +1,5 @@
+> **THIS REPOSITORY IS DEPRECATED:** An updated version is now available at https://github.com/swisspol/Libraries.
+
 Overview
 ========
 
